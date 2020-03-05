@@ -1,0 +1,8 @@
+<div class="text-center">
+  <div class="col-sm-8">
+    <ul class="nav nav-tabs nav-justified mb-3">
+      <li class="nav-item"><a href="<%= favomicroposts_user_path(@user) %>" class="nav-link <%= 'active' if current_page?(favomicroposts_user_path(@user)) %>">Likelists  <span class="badge badge-secondary"><%= @count_favomicroposts %></span></a></li>
+    </ul>
+    <%= render 'microposts/microposts', microposts: @favomicroposts %>
+  </div>
+</div>

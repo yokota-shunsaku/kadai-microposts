@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       get :followings
       get :followers
       get :favomicroposts
+      get :likes
     end
   end
   
